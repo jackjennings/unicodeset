@@ -43,4 +43,4 @@ class FrozenUnicodeSet(BaseUnicodeSet, frozenset):
         return frozenset.__new__(cls, _encode(iterable))
 
     def __init__(self, iterable=None):
-        return
+        pass
