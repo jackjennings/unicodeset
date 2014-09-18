@@ -1,9 +1,16 @@
 unicodeset
 ==========
 
+.. image:: https://travis-ci.org/jackjennings/unicodeset.svg?branch=master
+    :target: https://travis-ci.org/jackjennings/unicodeset
+
 unicodeset is a small module for managing sets of unique unicode code points.
 
 The classes ``UnicodeSet`` and ``FrozenUnicodeSet`` as superclasses of the respective Python builtins.
+
+.. code-block:: bash
+
+    $ pip install unicodeset
 
 .. code-block:: python
 
