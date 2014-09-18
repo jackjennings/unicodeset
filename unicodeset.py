@@ -23,9 +23,6 @@ def _encode_char(char):
 
 class BaseUnicodeSet(object):
 
-    def __init__(self, iterable=None):
-        super(BaseUnicodeSet, self).__init__(_encode(iterable))
-
     def __contains__(self, char):
         return super(BaseUnicodeSet, self).__contains__(_encode_char(char))
 
@@ -34,13 +31,12 @@ class BaseUnicodeSet(object):
 
 
 class UnicodeSet(BaseUnicodeSet, set):
-    pass
+
+    def __init__(self, iterable=None):
+        super(BaseUnicodeSet, self).__init__(_encode(iterable))
 
 
 class FrozenUnicodeSet(BaseUnicodeSet, frozenset):
 
     def __new__(cls, iterable=None):
         return frozenset.__new__(cls, _encode(iterable))
-
-    def __init__(self, iterable=None):
-        pass
