@@ -11,6 +11,5 @@ setup(
     license='LICENSE',
     description='set superclass for unicode character sets',
     long_description=open('README.rst').read(),
-    install_requires=[],
     include_package_data=True
 )
