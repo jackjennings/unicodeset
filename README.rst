@@ -4,9 +4,11 @@ unicodeset
 .. image:: https://travis-ci.org/jackjennings/unicodeset.svg?branch=master
     :target: https://travis-ci.org/jackjennings/unicodeset
 
-unicodeset is a small module for managing sets of unique unicode code points.
+unicodeset is a small module for managing sets of unique Unicode code points.
 
 The classes ``UnicodeSet`` and ``FrozenUnicodeSet`` as superclasses of the respective Python builtins.
+
+Supports Python 2.6 – 3.x
 
 .. code-block:: bash
 
@@ -16,7 +18,7 @@ The classes ``UnicodeSet`` and ``FrozenUnicodeSet`` as superclasses of the respe
 
     from unicodeset import UnicodeSet, FrozenUnicodeSet
 
-Values can be passed in as either integers or strings (or unicode strings in Python 2.7).
+Values can be passed in as either integers or strings (or Unicode strings in Python 2.7).
 
 .. code-block:: python
 
@@ -39,5 +41,3 @@ Iterating over UnicodeSet returns values sorted by code point.
 
     >>> [c for c in UnicodeSet(['z', 'n', '$', 'a'])]
     [u'$', u'a', u'n', u'z']
-
-Supports Python 2.6 – 3.x
