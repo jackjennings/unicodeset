@@ -5,6 +5,10 @@ unicodeset is a small module for managing sets of unique unicode code points.
 
 The classes ``UnicodeSet`` and ``FrozenUnicodeSet`` as superclasses of the respective Python builtins.
 
+.. code-block:: python
+
+    from unicodeset import UnicodeSet, FrozenUnicodeSet
+
 Values can be passed in as either integers or strings (or unicode strings in Python 2.7).
 
 .. code-block:: python
