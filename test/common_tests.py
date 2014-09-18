@@ -1,12 +1,16 @@
 class CommonTests(object):
 
-    def test_init_converts_to_unicode(self):
+    def test_init_converts_chr_to_unicode(self):
         s = self.klass(['a'])
         assert list(s) == [u"a"]
 
     def test_init_converts_integer_to_unicode(self):
         s = self.klass([97])
         assert list(s) == [u"a"]
+
+    def test_init_converts_unicode_to_unicode(self):
+        s = self.klass([u"\xf9"])
+        assert list(s) == [u"\xf9"]
 
     def test_contains_integer_representation(self):
         s = self.klass(['a'])
