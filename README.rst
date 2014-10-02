@@ -1,6 +1,9 @@
 unicodeset
 ==========
 
+.. image:: https://badge.fury.io/py/unicodeset.svg
+    :target: http://badge.fury.io/py/unicodeset
+
 .. image:: https://travis-ci.org/jackjennings/unicodeset.svg?branch=master
     :target: https://travis-ci.org/jackjennings/unicodeset
 
