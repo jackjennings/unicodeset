@@ -13,9 +13,15 @@ The classes ``UnicodeSet`` and ``FrozenUnicodeSet`` as superclasses of the respe
 
 Supports Python 2.6 – 3.x
 
+Installation
+------------
+
 .. code-block:: bash
 
     $ pip install unicodeset
+
+Usage
+-----
 
 .. code-block:: python
 
